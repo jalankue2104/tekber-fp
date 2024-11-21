@@ -5,10 +5,8 @@ class SignUpPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        // Latar belakang biru navy
         backgroundColor: Colors.blue[900],
         appBar: AppBar(
-          // Header dengan text "Make A Wish" berwarna biru muda dan ditengahkan
           title: Text('Your  Wish',
               style: TextStyle(color: const Color.fromARGB(255, 245, 233, 66))),
           backgroundColor: Colors.transparent,
@@ -21,14 +19,11 @@ class SignUpPage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                // Judul "Make A Wish" di posisi tengah atas (ini bisa dihapus jika tidak diperlukan)
 
                 const SizedBox(height: 20),
-
-                // Container putih untuk bagian form
                 Container(
-                  width: double.infinity, // Atur lebar container
-                  height: 500, // Atur tinggi container
+                  width: double.infinity, 
+                  height: 500, 
                   padding: const EdgeInsets.all(20.0),
                   decoration: const BoxDecoration(
                     color: Colors.white,
@@ -70,7 +65,6 @@ class SignUpPage extends StatelessWidget {
                       ),
                       const SizedBox(height: 20),
 
-                      // Tombol "Create Account" berwarna biru muda
                       Center(
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
