@@ -6,15 +6,15 @@ class RuleForSignPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        // Latar belakang biru navy
+       
         backgroundColor: Colors.blue[900],
         appBar: AppBar(
-          // Header dengan text "Your Wish" berwarna biru muda dan ditengahkan
+     
           title: Text('Your Wish',
               style: TextStyle(color: const Color.fromARGB(255, 245, 233, 66))),
           backgroundColor: Colors.transparent,
           elevation: 0,
-          centerTitle: true, // Tambahkan ini untuk menengahkan judul
+          centerTitle: true, 
         ),
         body: SingleChildScrollView(
           child: Padding(
@@ -23,8 +23,6 @@ class RuleForSignPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 const SizedBox(height: 20),
-
-                // Container putih untuk bagian form
                 Container(
                   width: double.infinity, // Atur lebar container
                   height: 600, // Atur tinggi container
@@ -36,7 +34,7 @@ class RuleForSignPage extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      // Judul "Rules for sign up" di dalam container
+                      
                       Text(
                         'Rules for sign up',
                         style: TextStyle(
@@ -46,7 +44,7 @@ class RuleForSignPage extends StatelessWidget {
                       ),
                       const SizedBox(height: 10),
 
-                      // Aturan 1-10 untuk sign up dengan padding
+                      
                       Expanded(
                         child: ListView(
                           children: [
